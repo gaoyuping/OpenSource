@@ -1,0 +1,11 @@
+﻿  split.c
+  rsecc.c
+  qrspec.c
+  qrinput.c
+  qrencode.c
+  mqrspec.c
+  mmask.c
+  mask.c
+  bitstream.c
+  Generating Code...
+  qrencodelib1.vcxproj -> E:\qrencodelib1\Debug\qrencodelib1.lib

@@ -1,0 +1,10 @@
+﻿  bitstream.c
+  mask.c
+  mmask.c
+  mqrspec.c
+  qrencode.c
+  qrinput.c
+  qrspec.c
+  rsecc.c
+  split.c
+  qrencodelib1.vcxproj -> E:\qrencodelib1\Release\qrencodelib1.lib
