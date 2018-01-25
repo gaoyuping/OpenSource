@@ -15,7 +15,7 @@ using namespace std;
 #endif
 int main()
 {
-	char*           szSourceSring = "http://39.106.165.10/index.html";
+	char*           szSourceSring = "https://static.micloud.xiaomi.net/asr_nlp/apk/AiClientDemo.apk";
 	unsigned int    unWidth, x, y, l, n, unWidthAdjusted, unDataBytes;
 	unsigned char*  pRGBData, *pSourceData, *pDestData;
 	QRcode*         pQRC;
