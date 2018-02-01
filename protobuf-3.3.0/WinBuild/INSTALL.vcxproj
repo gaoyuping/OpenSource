@@ -40,47 +40,48 @@
     <Platform>Win32</Platform>
     <ProjectName>INSTALL</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -102,7 +103,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -125,7 +126,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -148,7 +149,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -171,7 +172,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -194,7 +195,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -217,7 +218,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -240,7 +241,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -263,7 +264,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -285,7 +286,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout\CMakeFiles\a260adaf830fb08c04d103a4cab15688\INSTALL_force.rule">
+    <CustomBuild Include="..\Buildout\CMakeFiles\a260adaf830fb08c04d103a4cab15688\INSTALL_force.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -308,10 +309,10 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/CMakeFiles/a260adaf830fb08c04d103a4cab15688/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/CMakeFiles/a260adaf830fb08c04d103a4cab15688/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout\CMakeFiles\INSTALL_force</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout\CMakeFiles\INSTALL_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../Buildout/CMakeFiles/a260adaf830fb08c04d103a4cab15688/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../Buildout/CMakeFiles/a260adaf830fb08c04d103a4cab15688/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Buildout\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\Buildout\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -336,10 +337,10 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/CMakeFiles/a260adaf830fb08c04d103a4cab15688/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/CMakeFiles/a260adaf830fb08c04d103a4cab15688/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout\CMakeFiles\INSTALL_force</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout\CMakeFiles\INSTALL_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../Buildout/CMakeFiles/a260adaf830fb08c04d103a4cab15688/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../Buildout/CMakeFiles/a260adaf830fb08c04d103a4cab15688/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Buildout\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\Buildout\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
@@ -364,10 +365,10 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/CMakeFiles/a260adaf830fb08c04d103a4cab15688/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/CMakeFiles/a260adaf830fb08c04d103a4cab15688/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout\CMakeFiles\INSTALL_force</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout\CMakeFiles\INSTALL_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../Buildout/CMakeFiles/a260adaf830fb08c04d103a4cab15688/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">../Buildout/CMakeFiles/a260adaf830fb08c04d103a4cab15688/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\Buildout\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\Buildout\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
@@ -392,20 +393,20 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/CMakeFiles/a260adaf830fb08c04d103a4cab15688/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/CMakeFiles/a260adaf830fb08c04d103a4cab15688/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout\CMakeFiles\INSTALL_force</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout\CMakeFiles\INSTALL_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../Buildout/CMakeFiles/a260adaf830fb08c04d103a4cab15688/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">../Buildout/CMakeFiles/a260adaf830fb08c04d103a4cab15688/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\Buildout\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\Buildout\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout\ZERO_CHECK.vcxproj">
+    <ProjectReference Include="..\Buildout\ZERO_CHECK.vcxproj">
       <Project>{0A29448A-C02A-3C12-AA64-DA4F5A4C47C3}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout\ALL_BUILD.vcxproj">
+    <ProjectReference Include="..\Buildout\ALL_BUILD.vcxproj">
       <Project>{A4CA567F-2215-370B-8DBB-AD7D13EB69E6}</Project>
       <Name>ALL_BUILD</Name>
     </ProjectReference>

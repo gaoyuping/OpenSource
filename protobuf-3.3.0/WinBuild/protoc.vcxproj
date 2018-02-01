@@ -40,47 +40,48 @@
     <Platform>Win32</Platform>
     <ProjectName>protoc</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -111,7 +112,7 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\Buildout\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">protoc.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">protoc</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">protoc</TargetName>
@@ -121,7 +122,7 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\Buildout\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">protoc.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">protoc</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">protoc</TargetName>
@@ -140,7 +141,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -161,10 +162,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -177,8 +178,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/Debug/protoc.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/Debug/protoc.pdb</ProgramDataBaseFile>
+      <ImportLibrary>../Buildout/Debug/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>../Buildout/Debug/protoc.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -187,7 +188,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -208,10 +209,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -224,8 +225,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/Debug/protoc.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/Debug/protoc.pdb</ProgramDataBaseFile>
+      <ImportLibrary>../Buildout/Debug/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>../Buildout/Debug/protoc.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -234,7 +235,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -254,10 +255,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -270,8 +271,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/Release/protoc.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/Release/protoc.pdb</ProgramDataBaseFile>
+      <ImportLibrary>../Buildout/Release/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>../Buildout/Release/protoc.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -280,7 +281,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -300,10 +301,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -316,8 +317,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/Release/protoc.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/Release/protoc.pdb</ProgramDataBaseFile>
+      <ImportLibrary>../Buildout/Release/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>../Buildout/Release/protoc.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -326,7 +327,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -346,10 +347,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -362,8 +363,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/MinSizeRel/protoc.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/MinSizeRel/protoc.pdb</ProgramDataBaseFile>
+      <ImportLibrary>../Buildout/MinSizeRel/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>../Buildout/MinSizeRel/protoc.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -372,7 +373,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -392,10 +393,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -408,8 +409,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/MinSizeRel/protoc.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/MinSizeRel/protoc.pdb</ProgramDataBaseFile>
+      <ImportLibrary>../Buildout/MinSizeRel/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>../Buildout/MinSizeRel/protoc.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -418,7 +419,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -437,10 +438,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -453,8 +454,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/RelWithDebInfo/protoc.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/RelWithDebInfo/protoc.pdb</ProgramDataBaseFile>
+      <ImportLibrary>../Buildout/RelWithDebInfo/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>../Buildout/RelWithDebInfo/protoc.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -463,7 +464,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -482,10 +483,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\gtest\include;D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Buildout;..\src;..\gmock;..\gmock\gtest;..\gmock\gtest\include;..\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -498,8 +499,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/RelWithDebInfo/protoc.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/temp/TimiSDK_/TimiSDK/ThirdParty/protobuf-3.3.0/Buildout/RelWithDebInfo/protoc.pdb</ProgramDataBaseFile>
+      <ImportLibrary>../Buildout/RelWithDebInfo/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>../Buildout/RelWithDebInfo/protoc.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -507,18 +508,18 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\src\google\protobuf\compiler\main.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\main.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout\ZERO_CHECK.vcxproj">
+    <ProjectReference Include="..\Buildout\ZERO_CHECK.vcxproj">
       <Project>{0A29448A-C02A-3C12-AA64-DA4F5A4C47C3}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout\libprotobuf.vcxproj">
+    <ProjectReference Include="..\Buildout\libprotobuf.vcxproj">
       <Project>{9AD3567E-FD46-3F9F-831A-E9805DEB13DC}</Project>
       <Name>libprotobuf</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\temp\TimiSDK_\TimiSDK\ThirdParty\protobuf-3.3.0\Buildout\libprotoc.vcxproj">
+    <ProjectReference Include="..\Buildout\libprotoc.vcxproj">
       <Project>{6C4B6B5B-95E4-3F0A-A25D-1EF48D971A82}</Project>
       <Name>libprotoc</Name>
     </ProjectReference>
