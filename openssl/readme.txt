@@ -6,4 +6,9 @@ perl Configure VC-WIN32 --prefix=C:\Build-OpenSSL-VC-32   #release版本用VC-WIN32
 ms\do_nasm.bat
 nmake -f ms\nt.mak
 nmake -f ms\nt.mak install
+
+MT版本修改 以下文件中的/MD -> /MT 即可
+shlib/win32dll.bat
+crypto/threads/win32.bat
+crypto/threads/ptest.bat
 完成
